@@ -1,26 +1,18 @@
-package com.oop;
+package oop;
 
-class Person {
-	String name;
-	int age;
-	
-	public Person(String name, int age) {
-		this.name = name;
-		this.age = age;
-	}
-}
-class Employee extends Person {
-	int employeeID;
-	double salary;
+public class Employee implements Taxable {
+    private int empId;
+    private String name;
+    private double salary;
 
-    public Employee(String name, int age, int employeeID, double salary) {
-	super(name, age);
-	this.employeeID = employeeID;
-	this.salary = salary;
-}
-public void display() {
-	System.out.println("Name : " + name);
-	System.out.println("Age :"+ age);
-	System.out.println("Employee ID : "+ employeeID);
-}
+    public Employee(int empId, String name, double salary) {
+        this.empId = empId;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public void calcTax() {
+        double tax = salary * incomeTax;
+        System.out.println("Income Tax for " + name + " is: " + tax);
+    }
 }
