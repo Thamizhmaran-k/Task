@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Default Values</title>
+</head>
+<body>
+
+    <form action="/submit-form" method="post">
+        
+        <h2>Input Fields with Default Values</h2>
+      
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" value="Saran"><br><br>
+        
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment">This is a default comment.</textarea><br><br>
+        
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes" checked><br><br>
+        
+        <p>Select your favorite pet:</p>
+        <input type="radio" id="dog" name="pet" value="dog" checked>
+        <label for="dog">Dog</label><br>
+        <input type="radio" id="cat" name="pet" value="cat">
+        <label for="cat">Cat</label><br><br>
+        
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="india"selected>India</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="mexico">Mexico</option>
+        </select><br><br>
+        
+        <label for="startdate">Start Date:</label><br>
+        <input type="date" id="startdate" name="startdate" value="2025-08-22"><br><br>
+        
+        <label for="favcolor">Favorite Color:</label><br>
+        <input type="color" id="favcolor" name="favcolor" value="#0055ff"><br><br>
+
+        <input type="submit" value="Submit Form">
+    </form>
+
+</body>
+</html>
